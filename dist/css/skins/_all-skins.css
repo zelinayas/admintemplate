@@ -6,7 +6,7 @@
   background-color: #244065;
 }
 .skin-blue .main-header .navbar .nav > li > a {
-  color: #ffffff;
+  color: #dbccb7;
 }
 .skin-blue .main-header .navbar .nav > li > a:hover,
 .skin-blue .main-header .navbar .nav > li > a:active,
@@ -44,7 +44,7 @@
 }
 .skin-blue .main-header .logo {
   background-color: #244065;
-  color: #ffffff;
+  color: #dbccb7;
   border-bottom: 0 solid transparent;
 }
 .skin-blue .main-header .logo:hover {
