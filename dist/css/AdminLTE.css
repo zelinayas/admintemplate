@@ -19,11 +19,21 @@ body {
 }
 body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 1000;
   overflow-x: hidden;
   overflow-y: auto;
 }
 /* Layout */
+
+#perat{
+  font-size: 50px;
+}
+
+#peraturan{
+  font-size: 20px;
+  text-align: justify-all;
+}
+
 .wrapper {
   height: 100%;
   position: relative;
@@ -500,12 +510,14 @@ a:focus {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .sidebar-menu > li {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
+
 .sidebar-menu > li > a {
   padding: 12px 5px 12px 15px;
   display: block;
@@ -4782,7 +4794,7 @@ table.text-center th {
   position: static !important;
 }
 .list-header {
-  font-size: 15px;
+  font-size: 30px;
   padding: 10px 4px;
   font-weight: bold;
   color: #666;
