@@ -165,97 +165,12 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">PILIHAN SOAL</h3>
-            </div>
-            <!-- /.box-header -->
-
-            <!-- /.box-header -->
-            <!-- form start -->
-            <div class="box-header with-border">
-              <div class="col-md-4">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label>Kelompok Soal</label>
-                      <select class="form-control">
-                        <option>Matematika</option>
-                        <option>Psikotes</option>
-                        <option>Fisika</option>
-                      </select>
-                    </div>
-                  </div>
-              </div>
-             
-              <div class="col-md-4">
-                <div class="box-body">
-                  <div class="form-group">
-                    <label>Kelompok Sub</label>
-                    <select class="form-control">
-                      <option>Sub 1</option>
-                      <option>Sub 2</option>
-                      <option>Sub 2</option>
-                      <option>Sub 2</option>
-                      <option>Tambah sub</option>
-
-                    </select>
-                  </div>
-                </div>
-                </div>
-              </div>          
-            
-          </div>
-        </div>
-      
-    </div>
-            
-<div class="box-body">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  
-                  <th></th>
-                  <th>No</th>
-                  <th>SOAL</th>
-                  <th>TIPE SOAL</th>
-                  
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>1</td>
-                  <td>Apa nama ibukota Negara Indonesia ?</td>
-                  <td>Pilihan ganda</td>
-                  
-                </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>2</td>
-                  <td>Apa saja nama suku yang ada di Pulau Kalimantan ?</td>
-                  <td>Uraian</td>
-                  
-                </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>3</td>
-                  <td>Apa nama mata uang Negara Indonesia ?</td>
-                  <td>Uraian</td>
-                  
-                </tr>
-               
-                </tbody>
-
-              </table>
-</div>
-
-<div class="box-body">
+     
+  <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
                 <div class="box-header">
               <h3 class="box-title">TAMPILAN SOAL YANG DIPILIH</h3>
-            </div>
+                </div>
                 <thead>
                 <tr>
                   
@@ -295,16 +210,160 @@
                 </tbody>
 
               </table>
+  </div>
+
+  <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <div class="box-header">
+                  <h3 class="box-title">TAMPILAN PESERTA YANG DIPILIH</h3>
+                </div>
+                <thead>
+                <tr>
+                  <th>No</th>
+                  <th>NAMA</th>
+                  <th>EMAIL</th>
+                  <th>PASSWORD</th>
+                 
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  
+                  <td>1</td>
+                  <td>Rasyid Maulid</td>
+                  <td>rasyid@gmail.com</td>
+                  <td>1a2b3c</td>
+                  
+                </tr>
+                <tr>
+                  
+                  <td>2</td>
+                  <td>Risang Ramada</td>
+                  <td>risang@gmail.com</td>
+                  <td>4d5e6f</td>
+                 
+                </tr>
+                <tr>
+                  
+                  <td>3</td>
+                  <td>Zelina Yasinta</td>
+                  <td>zelina@gmail.com</td>
+                  <td>7g8h9i</td>
+                  
+                </tr>
+               
+                </tbody>
+
+              </table>
+  </div>
+
+  <div class="row">
+        <div class="col-md-6">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title">Pengaturan Durasi Waktu dan Tanggal</h3>
             </div>
-           <div class="box-footer">
+            <div class="box-body">
+               <div class="form-group">
+                    <label>Kelompok Sub</label>
+                    <select class="form-control">
+                      <option>Sub 1</option>
+                      <option>Sub 2</option>
+                      <option>Sub 2</option>
+                      <option>Sub 2</option>
+                    </select>
+                  </div>
+    
+              <!-- Date and time range -->
+              <div class="form-group">
+                <label>Date and time range:</label>
+
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-clock-o"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="reservationtime">
+                </div>
+                <!-- /.input group -->
+              </div>
+              <!-- /.form group -->
+
+              <!-- Date and time range -->
+              
+              <div class="input-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
+              </div> 
             </div>
             <!-- /.box-body -->
           </div>
-              <!-- /.row -->
+          <!-- /.box -->
+           
+        </div>
+        
+        <!-- /.col (left) -->
+        <div class="col-md-6">
+          <div class="box box-primary">
+            <div class="box-header">
+              <h3 class="box-title">Detail Pilihan Tes</h3>
+            </div>
+          <table id="example2" class="table table-bordered table-hover">
+               
+                <thead>
+                <tr>
+                  <th>Jumlah Soal</th>
+                  <th>Kelompok Sub</th>
+                  <th>Durasi Waktu</th>
+                
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  
+                  <td>1</td>
+                  <td>2</td>
+                  <td>00:30:00</td>
+                  
+                </tr>
+                <tr>
+                  
+                  <td>2</td>
+                  <td>1</td>
+                  <td>00:30:00</td>
+                  
+                </tr>
+                <tr>
+                  
+                  <td>3</td>
+                  <td>2</td>
+                  <td>00:30:00</td>
+                </tr>
+               
+                </tbody>
+
+              </table>
+       
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- iCheck -->
+          <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+   </div>
+
+              
+
+             
         </div>
 
-      </div>
+        <!-- /.col (right) -->
+  </div>
+
+   
+
       <!-- /.row -->
     </section>
 
@@ -329,49 +388,101 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Page script -->
 <script>
-  $.widget.bridge('uibutton', $.ui.button);
   $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
 
+    //Datemask dd/mm/yyyy
+    $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+    //Datemask2 mm/dd/yyyy
+    $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+    //Money Euro
+    $('[data-mask]').inputmask()
+
+    //Date range picker
+    $('#reservation').daterangepicker()
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+      {
+        ranges   : {
+          'Today'       : [moment(), moment()],
+          'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+          'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        startDate: moment().subtract(29, 'days'),
+        endDate  : moment()
+      },
+      function (start, end) {
+        $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+      }
+    )
 
     //Date picker
     $('#datepicker').datepicker({
       autoclose: true
     })
+
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass   : 'iradio_minimal-blue'
+    })
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass   : 'iradio_minimal-red'
+    })
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass   : 'iradio_flat-green'
+    })
+
+    //Colorpicker
+    $('.my-colorpicker1').colorpicker()
+    //color picker with addon
+    $('.my-colorpicker2').colorpicker()
+
+    //Timepicker
+    $('.timepicker').timepicker({
+      showInputs: false
+    })
   })
 </script>
-<!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<!-- Morris.js charts -->
-<script src="bower_components/raphael/raphael.js"></script>
-<script src="bower_components/morris.js/morris.js"></script>
-<!-- Sparkline -->
-<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.js"></script>
-<!-- jvectormap -->
-<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="bower_components/jquery-knob/dist/jquery.knob.js"></script>
-<!-- daterangepicker -->
-<script src="bower_components/moment/min/moment.min.js"></script>
-<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-<!-- datepicker -->
-<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js"></script>
-<!-- Slimscroll -->
-<script src="bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
-<!-- FastClick -->
-<script src="bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script></body>
+</body>
 </html>
