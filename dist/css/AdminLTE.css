@@ -24,6 +24,14 @@ body {
   overflow-y: auto;
 }
 /* Layout */
+a.disabled{
+  color: gray;
+  pointer-events: none;
+}
+
+a.disabled:hover{
+  background-color: none;
+}
 
 .contohsoal{
   text-align: justify-all;
