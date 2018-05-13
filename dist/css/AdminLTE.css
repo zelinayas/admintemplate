@@ -24,14 +24,21 @@ body {
   overflow-y: auto;
 }
 /* Layout */
+
+.contohsoal{
+  text-align: justify-all;
+  font-size: 20px;
+}
+
 .linkk{
   font-size: 15px;
   
 }
 
 
-#perat{
+.perat{
   font-size: 50px;
+  text-align: center;
 }
 
 #peraturan{
