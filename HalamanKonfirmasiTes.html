@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -27,6 +29,7 @@
   <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Date Picker -->
   <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css">
+
   <!-- Daterange picker -->
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
@@ -269,31 +272,39 @@
               <h3 class="box-title">Pengaturan Durasi Waktu dan Tanggal</h3>
             </div>
             <div class="box-body">
-               <div class="form-group">
+               
+
+              <!-- Date and time range -->
+              <div class="form-group">
+                <label>Date</label>
+               <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
+              </div>
+          	<div class="bootstrap-timepicker">
+              	<div class="form-group">
+                	<label>Time</label>
+             		<div class="input-group time">
+             			<div class="input-group-addon">
+                    	<i class="fa fa-clock-o"></i>
+                  		</div>
+             			<input type="text" class="form-control pull-right" id="timePicker">
+          			</div>
+          	 	</div>
+          	</div>
+
+          	<div class="form-group">
                     <label>Kelompok Sub</label>
                     <select class="form-control">
                       <option>Sub 1</option>
                       <option>Sub 2</option>
-                      <option>Sub 2</option>
-                      <option>Sub 2</option>
+                      <option>Sub 3</option>
+                      <option>Sub 4</option>
                     </select>
-                  </div>
-
-              <!-- Date and time range -->
-              <div class="form-group">
-                <label>Date and time range:</label>
-
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="reservationtime">
-                </div>
-                <!-- /.input group -->
-              </div>
-              <!-- /.form group -->
-
-              <!-- Date and time range -->
+            </div>
 
               <div class="input-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -355,26 +366,20 @@
 
           <!-- iCheck -->
           <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Simpan</button>
-   </div>
-
-
-
+          	<div class="col-lg-9">
+          		<button type="submit" class="btn btn-primary">Simpan</button>
+        	</div>
+                
+   		</div>
 
         </div>
 
         <!-- /.col (right) -->
   </div>
 
-
-
       <!-- /.row -->
-    </section>
+</section>
 
-    <!-- Main content -->
-
-    <!-- /.content -->
-  </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
@@ -406,6 +411,7 @@
 <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap datepicker -->
 <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
 <!-- bootstrap color picker -->
 <script src="bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
@@ -420,6 +426,8 @@
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+
 <!-- Page script -->
 <script>
   $(function () {
