@@ -24,14 +24,59 @@ body {
   overflow-y: auto;
 }
 /* Layout */
-a.disabled{
-  color: gray;
-  pointer-events: none;
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v16/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff'), url(https://fonts.gstatic.com/s/roboto/v16/QHD8zigcbDB8aPfIoaupKOvvDin1pK8aKteLpeZ5c0A.ttf) format('truetype')
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOCZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')
 }
 
-a.disabled:hover{
-  background-color: none;
+.countdown {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
+
+#time {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  vertical-align: middle;
+  position: relative;
+  left: 420px;
+  top: 25px;
+}
+
+.treeview{
+  cursor: not-allowed;
+}
+
+.kanan{
+  position: absolute;
+  left: 680px;
+  display: 
+}
+
+.lanjut{
+  text-indent: 670px;
+}
+
+.soal{
+  padding: 10px;
+  margin: 10px;
+}
+
+.disable{
+  pointer-events: none;
+  opacity: 0.2;
+  background-color: #000;
+ }
 
 .contohsoal{
   text-align: justify-all;
@@ -281,7 +326,10 @@ a:focus {
   background-image: none;
   padding: 15px 15px;
   font-family: fontAwesome;
+  color: #000; 
 }
+
+
 .main-header .sidebar-toggle:before {
   content: "\f0c9";
 }
