@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>TestTime</title>
-  <link rel="icon" type="asset/image/png" href="asset/img/penting.png">
+  <title>AdminLTE 2 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -39,8 +39,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue layout-boxed sidebar-mini">
-<div class="wrapper">
-
+<div class="wrapped">
+	<header class="main-header">
+		<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        	<span class="sr-only">Toggle navigation</span>
+     	</a>
+	</header>
 
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
@@ -51,32 +55,47 @@
       <!-- search form  fa-user -->
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
+      
       <ul class="sidebar-menu" data-widget="tree">
         <li class="treeview">
-          <a href="#"> <span>SUB 1</span></a>
+          <a href=#> 
+            <span>SOAL 1</span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 1</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 2</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 3</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 4</a></li>
+          </ul>
         </li>
           <li class="treeview">
-            <a href="#">
-              <span>SUB 2</span>
+            <a href="#" class="disable">
+              <span>SOAL 2</span>
             </a>
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i>SUB 1</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>SUB 2</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>SUB 3</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>SUB 4</a></li>
+            </ul>
           </li>
 
         <li class="treeview">
-          <a href="#">
-            <span>SUB 3</span>
+          <a href="#" class="disable">
+            <span>SOAL 3</span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 1</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 2</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 3</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>SUB 4</a></li>
+          </ul>
         </li>
-
-      <li class="treeview">
-        <a href="#">
-          <span>SUB 4</span>
-        </a>
-      </li>
-  </ul>
 
 
     </section>
     <!-- /.sidebar -->
+ 
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -87,50 +106,42 @@
     </section>
 
     <!-- Main content -->
+ 
   <section class="content">
     <div class="row">
-      <div class="col-lg-12">
-        <h1 class="perat">CONTOH SOAL</h1><br/>
-        <ol class="contohsoal">
-          <li>Apabila diberikan 2 kelas : class A {} , abstract class B {} dan 2 interface : interface X{} , interface Y{}. Manakah penerapan yang valid untuk menurunkan kelas dan menggunakan interface?</li>
-          <div class="checkbox">
-            <label><input type="checkbox" value=""><strong>Class C : A , X {}</strong></label>
+      <div class="col-lg-10">
+        <h3 class="soal">1. Tipe data apa saja yang bisa digunakan untuk switch</h3>
+          <div class="checkbox soal jawaban">
+            <label><input type="checkbox" value=""><strong>int</strong></label>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value=""><strong>Class C : Y ,B { }</strong></label>
+          <div class="checkbox soal jawaban">
+            <label><input type="checkbox" value=""><strong>float</strong></label>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value=""><strong>Class C : A, B { }</strong></label>
+          <div class="checkbox soal jawaban">
+            <label><input type="checkbox" value=""><strong>double</strong></label>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value=""><strong>Class C : X, Y , B { }</strong></label>
+          <div class="checkbox soal jawaban">
+            <label><input type="checkbox" value=""><strong>string</strong></label>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value=""><strong>Class C : B ,X,Y { }</strong></label>
+          <div class="checkbox soal jawaban">
+            <label><input type="checkbox" value=""><strong>enum</strong></label>
           </div>
-          <li>Manakah inisialisasi boolean yang valid?</li>
-          <div class="radio">
-            <label><input type="radio" name="optradio"><strong>bool h = 1;</strong></label>
+          <br/><br/><br/><br/><br/><br/>
+          <div class="countdown">
+          	<span id="time">01:00:00</span>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="optradio"><strong>bool k = "true";</strong></label>
+          <div class="btn-group kanan" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary fa fa-arrow-right fa-lg"> Next
           </div>
-          <div class="radio">
-            <label><input type="radio" name="optradio"><strong>bool m = null;</strong></label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="optradio"><strong>bool j = ( 1 < 5);</strong></label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="optradio"><strong>Semua jawaban salah</strong></label>
-          </div><br>
-
-          <button type="button" class="btn btn-primary btn-lg center-block">Submit</button>
-        </ol>
+      </div>
+      <div class="col-lg-2">
+        <div class="checkbox">
+            <label><input type="checkbox" value=""><strong>Flex</strong></label>
+        </div>
       </div>
     </div>
   </section>
-
+ 
 
     <!-- /.content -->
   </div>
@@ -192,5 +203,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<script src="dist/js/countdown.js"></script>
 </body>
 </html>
