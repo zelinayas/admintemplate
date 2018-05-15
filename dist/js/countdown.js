@@ -20,7 +20,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function() {
-  var fiveMinutes = 60 * 60,
+  var fiveMinutes = 120 * 60,
     display = document.querySelector('#time');
   startTimer(fiveMinutes, display);
 };
