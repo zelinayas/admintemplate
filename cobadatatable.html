@@ -134,8 +134,6 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Peserta</a></li>
-              
-              <li><a href="HalamanPilihPeserta.html"><i class="fa fa-circle-o"></i> Tambah Peserta</a></li>
             </ul>
           </li>
 
@@ -145,16 +143,16 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Soal</a></li>
-            <li><a href="halamanPilihSoal.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
           </ul>
         </li>
 
       <li class="treeview">
         <a href="#">
-          <i class="fa  fa-bar-chart"></i> <span>Hasil Tes</span>
+          <i class="fa  fa-bar-chart"></i> <span>Jawaban Peserta</span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="HalamanHasilJawaban.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
+          <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
         </ul>
       </li>
   </ul>
@@ -181,47 +179,46 @@
     <!-- Main content -->
   <section class="content">
 
-      <div class="row">
-        <div class="col-md-9">
-
-          <!-- Profile Image -->
-          <div class="box box-primary">
-            <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="dist/img/avatar2.png" alt="User profile picture">
-
-              <h3 class="profile-username text-center">Nina Mcintire</h3>
-
-              <p class="text-muted text-center">Software Engineer</p>
-            </div>
-            <!-- /.box-body -->
-
-            <!-- /.box-header -->
-            <div class="box-body">
-              <strong><i class="fa fa-book margin-r-5"></i> Tempat Lahir</strong>
-                <p class="text-muted">
-                  B.S. in Computer Science from the University of Tennessee at Knoxville
-                </p>
-              <hr>
-                <strong><i class="fa fa-map-marker margin-r-5"></i> Tanggal Lahir</strong>
-                  <p class="text-muted">Malibu, California</p>
-              <hr>
-                <strong><i class="fa fa-pencil margin-r-5"></i> Email</strong>
-                  <p
-                    class="text-muted">Malibu, California
-                  </p>
-              <hr>
-                <strong><i class="fa fa-file-text-o margin-r-5"></i> Alamat</strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-              <hr>
-                <strong><i class="fa fa-file-text-o margin-r-5"></i> Alamat</strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">Data Table With Full Features</h3>
       </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table id="example1" class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <th>Rendering engine</th>
+            <th>Browser</th>
+            <th>Platform(s)</th>
+            <th>Engine version</th>
+            <th>CSS grade</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Trident</td>
+            <td>Internet
+              Explorer 4.0
+            </td>
+            <td>Win 95+</td>
+            <td> 4</td>
+            <td>X</td>
+          </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+            <th>Rendering engine</th>
+            <th>Browser</th>
+            <th>Platform(s)</th>
+            <th>Engine version</th>
+            <th>CSS grade</th>
+          </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- /.box-body -->
+    </div>
 
   </section>
         <!-- right col -->
@@ -246,7 +243,6 @@
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="bower_components/jquery-ui/jquery-ui.js"></script>
@@ -271,7 +267,24 @@
   });
 
 </script>
+<script>
 
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+
+</script>
+<link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <!-- Morris.js charts -->
@@ -301,6 +314,8 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-
+<link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 </body>
 </html>
