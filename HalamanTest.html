@@ -2,9 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge/">
   <title>Admin TestTime</title>
   <link rel="icon" type="asset/image/png" href="asset/img/penting.png"/>
+  <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
@@ -142,14 +143,24 @@
             <i class="fa fa-file-o"></i> <span>Soal Test</span>
           </a>
           <ul class="treeview-menu">
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Bank Soal</a></li>
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Soal</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Properti</a></li>
           </ul>
         </li>
+        <li class="treeview">
+            <a href="#">
+              <i class="fa fa-file-o"></i> <span>Test</span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> List Test</a></li>
+              <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Tambah Test</a></li>
+            </ul>
+          </li>
 
       <li class="treeview">
         <a href="#">
-          <i class="fa  fa-bar-chart"></i> <span>Jawaban Peserta</span>
+          <i class="fa  fa-bar-chart"></i> <span>Hasil Test</span>
         </a>
         <ul class="treeview-menu">
           <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
@@ -184,48 +195,123 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Hover Data Table</h3>
-
             </div>
             <!-- /.box-header -->
-
-
             <div class="box-body">
-              <button type="button" class="btn  btn-primary">Primary</button>
+              <button type="button" class="btn  btn-primary">Tambah Test</button>
               <br>
-              <br>  
-              <table id="example2" class="table table-bordered table-hover">
+              <br>
+              <table id="example1" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                  <th width="30px">No</th>
-                  <th>NAMA</th>
-                  <th>EMAIL</th>
-                  <th width="200px">Tempat, Tanggal Lahir</th>
-                  <th width="200px">Aksi</th>
+                  <th>No</th>
+                  <th>NAMA TEST</th>
+                  <th>WAKTU TEST</th>
+                  <th>JUMLAH PESERTA</th>
+                  <th>JUMLAH SOAL</th>
+                  <th>STATUS</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Psikotes </td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
                   <td>50 Peserta</td>
-                  <td> Jakarta, 20 Desember 2018</td>
-                  <td ><center>
-                    <button type="button" class="btn  btn-primary">Primary</button>
-                    <button type="button" class="btn  btn-primary">Primary</button>
-                  </center>
-                  </td>
-
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
                 </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+
 
                 </tbody>
                 <tfoot>
                 <tr>
                   <th>No</th>
-                  <th>NAMA</th>
-                  <th>EMAIL</th>
-                  <th>Tempat, Tanggal Lahir</th>
-                  <th>Aksi</th>
-
+                  <th>JENIS TEST</th>
+                  <th>JUMLAH PESERTA</th>
+                  <th>WAKTU TEST</th>
+                  <th>DURASI TESR</th>
+                  <th>STATUS</th>
                 </tr>
                 </tfoot>
               </table>
@@ -260,6 +346,8 @@
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
+
+<!-- jQuery 3 -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="bower_components/jquery-ui/jquery-ui.js"></script>
@@ -314,6 +402,24 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<script>
+
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+
+</script>
+<link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
 </body>
 </html>
