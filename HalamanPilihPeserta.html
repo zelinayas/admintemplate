@@ -135,6 +135,8 @@
           </a>
             <ul class="treeview-menu">
               <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Peserta</a></li>
+             
+              <li><a href=" HalamanPilihPeserta.html"><i class="fa fa-circle-o"></i> Pilih Peserta</a></li>
             </ul>
         </li>
 
@@ -144,16 +146,16 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Soal</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
+            <li><a href="halamanPilihSoal.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
           </ul>
         </li>
 
         <li class="treeview">
           <a href="#">
-            <i class="fa  fa-bar-chart"></i> <span>Jawaban Peserta</span>
+            <i class="fa  fa-bar-chart"></i> <span>Hasil Tes</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
+            <li><a href="HalamanHasilJawaban.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
           </ul>
         </li>
 
@@ -178,12 +180,9 @@
               <div class="col-md-4">
                   <div class="box-body">
                     <div class="form-group">
-                      <label>Kelompok Soal</label>
-                      <select class="form-control">
-                        <option>Matematika</option>
-                        <option>Psikotes</option>
-                        <option>Fisika</option>
-                      </select>
+                        <label for="KelompokSoal">Kelompok Soal: </label>
+                        <input id="KelompokSoal">
+                     
                     </div>
                   </div>
               </div>
@@ -318,10 +317,42 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="dist/jquery-1.12.4.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="dist/jquery-ui.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script type="text/javascript"></script>  
+  <script>
+  $( function() {
+    var kelompokSoal = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#KelompokSoal" ).autocomplete({
+      source: kelompokSoal
+    });
+  } );
+  </script>
 <script>
   $.widget.bridge('uibutton', $.ui.button);
   $(function () {
@@ -341,7 +372,7 @@
 <!-- Sparkline -->
 <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.js"></script>
 <!-- jvectormap -->
-<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.js"></script>
+<!-- <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.js"></script> -->
 <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- jQuery Knob Chart -->
 <script src="bower_components/jquery-knob/dist/jquery.knob.js"></script>

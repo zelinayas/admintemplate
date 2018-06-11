@@ -140,7 +140,9 @@
               <i class="fa fa-user"></i> <span>Peserta</span>
             </a>
             <ul class="treeview-menu">
+              
               <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Peserta</a></li>
+              <li><a href="HalamanPilihPeserta.html"><i class="fa fa-circle-o"></i> Pilih Peserta</a></li>
             </ul>
           </li>
 
@@ -150,16 +152,16 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Soal</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
+            <li><a href="halamanPilihSoal.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
           </ul>
         </li>
 
       <li class="treeview">
         <a href="#">
-          <i class="fa  fa-bar-chart"></i> <span>Jawaban Peserta</span>
+          <i class="fa  fa-bar-chart"></i> <span>Hasil Tes</span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
+          <li><a href="HalamanHasilJawaban.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
         </ul>
       </li>
 
@@ -282,17 +284,33 @@
                   <input type="text" class="form-control pull-right" id="datepicker">
                 </div>
               </div>
-          	<!-- <div class="bootstrap-timepicker"> -->
+
+
+          	<div class="bootstrap-timepicker">
               	<div class="form-group">
-                	<label>Time</label>
+                	<label>Start Time</label>
              		<div class="input-group time">
              			<div class="input-group-addon">
                     	<i class="fa fa-clock-o"></i>
-                  		</div>
-             			<input type="text" class="form-control pull-right" id="waktu">
+                  </div>
+             			<input type="text" class="form-control timepicker" id="timepicker">
           			</div>
           	 	</div>
-          	<!-- </div> -->
+            </div>
+          	
+
+            <div class="bootstrap-timepicker">
+                <div class="form-group">
+                  <label>End Time</label>
+                <div class="input-group time">
+                  <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                  </div>
+                  <input type="text" class="form-control timepicker" id="timepicker">
+                </div>
+              </div>
+             </div>
+
 
           	<div class="form-group">
             	<label>Kelompok Sub</label>
@@ -301,6 +319,7 @@
                       <option>Sub 2</option>
                       <option>Sub 3</option>
                       <option>Sub 4</option>
+                      <option>Tambah Sub</option>
                     </select>
             </div>
 
@@ -316,7 +335,7 @@
 
         <!-- /.col (left) -->
         <div class="col-md-6">
-          <div class="box box-primary">
+          <div class="box box-danger">
             <div class="box-header">
               <h3 class="box-title">Detail Pilihan Tes</h3>
             </div>
@@ -355,6 +374,9 @@
                 </tbody>
 
               </table>
+              <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
 
 
             </div>
@@ -364,9 +386,7 @@
 
           <!-- iCheck -->
           <div class="box-footer">
-          	<div class="col-lg-9">
-          		<button type="submit" class="btn btn-primary">Simpan</button>
-        	</div>
+          	
                 
    		</div>
 
@@ -490,7 +510,8 @@
     $('.my-colorpicker2').colorpicker()
 
     //Timepicker
-    $('.timepicker').timepicker({
+    $('#timepicker').timepicker({
+
       showInputs: false
     })
   })
