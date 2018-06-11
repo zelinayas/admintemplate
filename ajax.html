@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+	<script src="dist/jquery-1.12.4.js"></script>
+	<script>
+		$().ready(function()
+		{
+			$('#tombol').click(function(){
+				$.ajax({
+					url: "proses.php",
+					beforeSend: function(){
+						$('#loading').show();
+					},
+					success: function(html){
+						$('#loading').hide();
+						alert(html);
+					}
+				});
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<span id="loading" style="display: none">LOADING.....</span><br />
+	<button id="tombol">Klik disini</button>
+</body>
+</html>
