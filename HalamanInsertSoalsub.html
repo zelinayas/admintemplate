@@ -2,9 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge/">
   <title>Admin TestTime</title>
-  <link rel="icon" type="asset/image/png" href="asset/img/penting.png"/>  <!-- Tell the browser to be responsive to screen width -->
+  <link rel="icon" type="asset/image/png" href="asset/img/penting.png"/>
+  <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
@@ -36,7 +37,7 @@
   <![endif]-->
 
   <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"/>
 </head>
 <body class="hold-transition skin-blue layout-boxed sidebar-mini">
 <div class="wrapper">
@@ -142,14 +143,24 @@
             <i class="fa fa-file-o"></i> <span>Soal Test</span>
           </a>
           <ul class="treeview-menu">
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Bank Soal</a></li>
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Soal</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Pilih Soal</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Properti</a></li>
           </ul>
         </li>
+        <li class="treeview">
+            <a href="#">
+              <i class="fa fa-file-o"></i> <span>Test</span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> List Test</a></li>
+              <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Tambah Test</a></li>
+            </ul>
+          </li>
 
       <li class="treeview">
         <a href="#">
-          <i class="fa  fa-bar-chart"></i> <span>Jawaban Peserta</span>
+          <i class="fa  fa-bar-chart"></i> <span>Hasil Test</span>
         </a>
         <ul class="treeview-menu">
           <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Hasil Jawaban</a></li>
@@ -179,79 +190,269 @@
     <!-- Main content -->
   <section class="content">
 
-    <div class="row">
-      <form role="form">
+      <div class="row">
         <div class="col-xs-12">
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Quick Example</h3>
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Hover Data Table</h3>
             </div>
             <!-- /.box-header -->
-            <!-- form start -->
-            <div class="box-header with-border">
-            <div class="col-md-6">
-
-                <div class="box-body">
-                    <div class="form-group">
-                      <label>Nama Test</label>
-                      <input type="text" class="form-control" placeholder="Enter ...">
-                    </div>
-                    <!-- <div class="form-group">
-                    <label></label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                    </div> -->
-                    <!-- <div class="form-group">
-                      <label>Tanggal Test</label>
-
-                      <div class="input-group date">
-                        <div class="input-group-addon">
-                          <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" class="form-control pull-right" id="datepicker">
-                      </div>
-
-                    </div> -->
-                    <!-- <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div> -->
-              </div>
-          </div>
-          <div class="col-md-6">
             <div class="box-body">
-              <div class="form-group">
-                <label>Tanggal Test</label>
+              <button type="button" class="btn  btn-primary">Tambah Test</button>
+              <br>
+              <br>
+              <table id="example1" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>No</th>
+                  <th>NAMA TEST</th>
+                  <th>WAKTU TEST</th>
+                  <th>JUMLAH PESERTA</th>
+                  <th>JUMLAH SOAL</th>
+                  <th>STATUS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
 
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
-                </div>
 
-              </div>  
-                <!-- <div class="form-group">
-                  <label>Alamat</label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputFile">Masukan Foto</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">hanya file .jpg</p>
-                </div> -->
-              </div>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>No</th>
+                  <th>JENIS TEST</th>
+                  <th>JUMLAH PESERTA</th>
+                  <th>WAKTU TEST</th>
+                  <th>DURASI TESR</th>
+                  <th>STATUS</th>
+                </tr>
+                </tfoot>
+              </table>
             </div>
+            <!-- /.box-body -->
           </div>
-            <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-          </div>
+              <!-- /.row -->
         </div>
-      </form>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Hover Data Table</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <button type="button" class="btn  btn-primary">Tambah Test</button>
+              <br>
+              <br>
+              <table id="example1" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>No</th>
+                  <th>NAMA TEST</th>
+                  <th>WAKTU TEST</th>
+                  <th>JUMLAH PESERTA</th>
+                  <th>JUMLAH SOAL</th>
+                  <th>STATUS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Test Masuk Perusahaan </td>
+                  <td> 20 Des 2018</td>
+                  <td>50 Peserta</td>
+                  <td>600 Soal</td>
+                  <td>Menunggu</td>
+                </tr>
+
+
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>No</th>
+                  <th>JENIS TEST</th>
+                  <th>JUMLAH PESERTA</th>
+                  <th>WAKTU TEST</th>
+                  <th>DURASI TESR</th>
+                  <th>STATUS</th>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+              <!-- /.row -->
+        </div>
+
       </div>
   </section>
         <!-- right col -->
